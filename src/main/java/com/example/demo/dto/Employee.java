@@ -12,4 +12,5 @@ public class Employee {
 	private Integer empId;
 	private String empName;
 	private Double empSalary;
+	private String empDepartmentName;
 }
