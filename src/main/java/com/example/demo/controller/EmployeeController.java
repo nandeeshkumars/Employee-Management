@@ -1,13 +1,17 @@
 package com.example.demo.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.dto.Employee;
 
 @RestController
 public class EmployeeController {
 
-	@GetMapping("/welcome")
-	public String welcome() {
-		return "Welcome to STS1234";
+	@PostMapping("/empData")
+	public String welcome(@RequestBody Employee emp) {
+		return "Hi " + emp.getEmpId() + " name for " + emp.getEmpName() + " with amount " + emp.getEmpSalary()
+				+ " successfully fetched";
 	}
 }
