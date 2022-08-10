@@ -8,6 +8,6 @@ public class EmployeeController {
 
 	@GetMapping("/welcome")
 	public String welcome() {
-		return "Welcome to STS1";
+		return "Welcome to STS12";
 	}
 }
