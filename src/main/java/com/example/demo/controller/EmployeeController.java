@@ -12,6 +12,6 @@ public class EmployeeController {
 	@PostMapping("/empData")
 	public String welcome(@RequestBody Employee emp) {
 		return "Hi " + emp.getEmpId() + " name for " + emp.getEmpName() + " with amount " + emp.getEmpSalary()
-				+ emp.getEmpDepartmentName1() + " successfully fetched";
+				+ emp.getEmpDepartmentName1() + " successfully fetched - 1";
 	}
 }
